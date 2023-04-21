@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <style>
+    .box {
+      width: 400px;
+      height: 600px;
+      padding: 40px;
+      border-radius: 20px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      /* background: linear-gradient(to right top , rgb(0, 255, 255) , rgb(198, 21, 198)); */
+      background: linear-gradient(to right top, #61D8DE, #8C60E9, #E938F8);
+    }
+    h1{
+      text-align: center;
+    }
+    h5{
+      margin-bottom: 5px;
+    }
+    input{
+      padding: 5px 15px;
+      /* This removes border from input box */
+      border: none;
+
+    }
+    .info{
+      /* Here We added border bottom to the info box  */
+      border-bottom: 2px solid gray;
+    }
+    .forget{
+      text-align: right;
+    }
+    .login-btn{
+      width: 80%;
+    padding: 10px;
+    background: linear-gradient(45deg,red, orange, yellow, green, blue, purple);
+    }
+    .wrap-btn{
+      display: flex;
+      justify-content: center;
+    }
+    .info2{
+display: flex; 
+justify-content: center;
+
+    }
+    .info2 svg{
+      margin: 0px 7px;
+    }
+    h6{
+      text-align: center;
+      font-size: 15px;
+    }
+    .twitter{
+      color: rgb(76, 198, 246);
+    }
+    .google_icon{
+      color: red;
+    }
+    .facebook{
+      color: rgb(107, 89, 244);
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Login</h1>
+    <h5>UserName</h5>
+    <div class="info">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+      </svg>
+      <input type="text" placeholder="Type Userame">
+    </div>
+    <h5>Password</h5>
+    <div class="info">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+      </svg>
+      <input type="password" placeholder="Type Your Password">
+    </div>
+    <a href="./forgetpassword.html"> <h5 class="forget">Forget Password?</h5> </a>
+    
+    <div class="wrap-btn"><button class="login-btn">LOGIN</button>
+    </div>
+<!-- btn -- button -->
+    <h6>or sign up using</h6>
+    <div class="info2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter twitter "
+        viewBox="0 0 16 16">
+        <path
+          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google google_icon"
+        viewBox="0 0 16 16">
+        <path
+          d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook facebook"
+        viewBox="0 0 16 16">
+        <path
+          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+      </svg>
+    </div>
+    <h6>or sign up using</h6>
+    <h6>sign in</h6>
+  </div>
+</body>
+
+</html>
+
+<!-- Homework -->
+
+
+
+<!-- Classes and Id's
+    Flexbox - Use notes on github
+    Box Model - margin , padding , border -->
